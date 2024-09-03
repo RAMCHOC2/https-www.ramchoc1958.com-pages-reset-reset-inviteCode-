@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Mon Compte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3e2723; /* Couleur chocolat foncé */
+            color: #ffffff; /* Couleur texte */
+        }
+        .header {
+            background-color: #5d4037; /* Couleur chocolat */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #6d4c41; /* Couleur chocolat clair */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .vip-section {
+            background-color: #d7ccc8; /* Couleur crème */
+            color: #3e2723; /* Couleur chocolat foncé */
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .profile-info img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .profile-info div {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .profile-info div p {
+            margin: 5px 0;
+        }
+        .balance-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .balance-box {
+            flex-basis: 30%;
+            background-color: #000000; /* Couleur chocolat */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .actions-section {
+            display: flex;
+            flex-direction: column;
+        }
+        .action-button {
+            background-color: #5d4037; /* Couleur chocolat */
+            color: white;
+            padding: 15px;
+            margin: 5px 0;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .action-button:hover {
+            background-color: #4e342e; /* Couleur chocolat plus foncé */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section VIP -->
+        <div class="vip-section">
+            VIP 0
+        </div>
+
+        <div class="profile-info">
+            <img src="https://image.noelshack.com/fichiers/2024/36/2/1725332706-photo-1724247595129-2.jpeg" alt="Photo de profil">
+            <div>
+                <!-- Suppression de la ligne concernant le nom -->
+                <!-- <p><strong>Nom :</strong> <span id="userName">Nom ici</span></p> -->
+                <p>MON COMPTE RAMCHOC</p>
+                <p><strong>Identifiant :</strong> <span id="userPhone"></span></p>
+            </div>
+       </div>
+        <div class="balance-section">
+            <div class="balance-box">
+                <p>Solde Principal</p>
+                <p><strong>500 XOF</strong></p>
+            </div>
+            <div class="balance-box">
+                <p>Solde Dépôts</p>
+                <p><strong>00 XOF</strong></p>
+            </div>
+            <div class="balance-box">
+                <p>Solde Retrait</p>
+                <p><strong>00 XOF</strong></p>
+            </div>
+        </div>
+
+        <div class="actions-section">
+            <a href="recharge.html" class="action-button">Recharge</a>
+            <a href="retrait.html" class="action-button">Retrait</a>
+            <a href="https://t.me/Online3027" class="action-button">Service Client</a>
+            <a href="historique-recharge.html" class="action-button">Historique de Recharge</a>
+            <a href="historique-recharge.html" class="action-button">Historique de retrait</a>          
+            <a href="portefeuille.html" class="action-button">Portefeuille</a>
+            <a href="index.html" class="action-button">Se Déconnecter</a> <!-- Bouton de déconnexion -->
+        </div>
+
+    </div>
+
+    <script>
+        // Récupérer les informations de l'utilisateur depuis localStorage
+        var storedPhone = localStorage.getItem('userPhone');
+
+        // Afficher les informations sur la page
+        document.getElementById('userPhone').textContent = storedPhone ? storedPhone : "Téléphone non renseigné";
+    </script>
+
+</body>
+</html>

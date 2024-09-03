@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Tableau d'Investissement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3E2723; /* Couleur chocolat */
+            color: #FAFAFA;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #5D4037;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .vip-box {
+            background-color: #8D6E63;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .vip-box h2 {
+            margin-top: 0;
+        }
+        .vip-box p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .vip-box .invest-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            color: white;
+            background-color: #3E2723;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+        }
+        .vip-box .invest-button:hover {
+            background-color: #4E342E;
+        }
+        .message {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #FF7043;
+            color: white;
+            border-radius: 5px;
+            display: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="vip-box">
+        <h2>VIP 1 - 8 000 XOF</h2>
+        <p><strong>Bonus d'investissement :</strong> 500 XOF</p>
+        <p><strong>Cycle :</strong> 31 jours</p>
+        <p><strong>Revenus quotidiens :</strong> 1 500 XOF</p>
+        <p><strong>Revenus totaux :</strong> 46 500 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 2 - 16 000 XOF</h2>
+        <p><strong>Bonus d'investissement :</strong> 1 000 XOF</p>
+        <p><strong>Cycle :</strong> 62 jours</p>
+        <p><strong>Revenus quotidiens :</strong> 3 000 XOF</p>
+        <p><strong>Revenus totaux :</strong> 186 000 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 3 - 32 000 XOF</h2>
+        <p><strong>Bonus d'investissement:</strong>1 500 XOF</p>
+        <p><strong>Cycle :</strong> 93 jours</p>
+        <p><strong>Bonus d'investissement :</strong> 4 500 XOF</p>
+        <p><strong>Revenus totaux :</strong> 418 500 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 4 - 64 000 XOF</h2>
+        <p><strong> Bonus d'investissement :</strong> 2 000 XOF</p>
+        <p><strong>Cycle :</strong> 124 jours</p>
+        <p><strong>Revenus quotidiens :</strong> 6 000 XOF</p>
+        <p><strong>Revenus totaux :</strong> 744 000 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 5 - 128 000 XOF</h2>
+        <p><strong>Bonus d'investissement :</strong> 2 500 XOF</p>
+        <p><strong>Cycle :</strong> 155 jours</p>
+        <p><strong>Revenus quotidiens :</strong> 7 500 XOF</p>
+        <p><strong>Revenus totaux :</strong> 1162 500 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">Investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 6 - 256 000 XOF</h2>
+        <p><strong>Bonus d'investissement :</strong>3 000 XOF</p>
+        <p><strong>Cycle :</strong> 186 jours</p>
+        <p><strong>Revenus quotidiens :</strong> 8 500 XOF</p>
+        <p><strong>Revenus totaux :</strong> 1 581 000 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">Investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 7 - 512 000 XOF</h2>
+        <p><strong>Bonus d'investissement :</strong> 3 500 XOF</p>
+        <p><strong>Cycle :</strong> 217 jours</p>
+        <p><strong>Revenus quotidiens :</strong> 10 000 XOF</p>
+        <p><strong>Revenus totaux :</strong> 2 170 000 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">Investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 8-1 024 000 XOF</h2>
+        <p><strong> Bonus d'investissement :</strong> 4 000 XOF</p>
+        <p><strong>Cycle :</strong> 248 jours</p>
+        <p><strong>Revenus quotidiens :</strong> 11 500 XOF</p>
+        <p><strong>Revenus totaux :</strong> 2 852 000 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">Investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 9-2 048 000 XOF</h2>
+        <p><strong>Bonus d'investissement :</strong> 4500 XOF</p>
+        <p><strong>Cycle :</strong> 279 jours</p>
+        <p><strong>Revenus quotidiens :</strong> 13 000 XOF</p>
+        <p><strong>Revenus totaux :</strong> 3 627 000 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">Investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 10 - 4 096 000 XOF</h2>
+        <p><strong>Bonus d'investissement :</strong> 5000 XOF</p>
+        <p><strong>Cycle :</strong> 310 jours</p>
+        <p><strong>Revenus quotidiens :</strong> 20 500 XOF</p>
+        <p><strong>Revenus totaux :</strong> 6 355 000 XOF</p>
+        <button class="invest-button" onclick="showMessage(this)">investir</button>
+        <div class="message">Solde insuffisant 500 XOF</div>
+    </div>
+
+    <div class="vip-box">
+        <h2>VIP 11 à 15 - Bientôt disponible</h2>
+        <p>Les informations sur les VIP 11 à 15 seront bientôt disponibles. Revenez plus tard pour plus de détails.</p>
+    </div>
+</div>
+
+<script>
+    function showMessage(button) {
+        var message = button.nextElementSibling;
+        message.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
